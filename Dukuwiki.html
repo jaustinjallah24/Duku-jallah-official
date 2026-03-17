@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Your Name - DUku Personal Wiki</title>
+
+<style>
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f6f6f6;
+margin:0;
+padding:20px;
+line-height:1.6;
+max-width:1100px;
+margin:auto;
+}
+
+/* Page title */
+
+h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+/* Layout container */
+
+.container{
+display:flex;
+gap:30px;
+}
+
+/* Infobox */
+
+.infobox{
+width:300px;
+border:3px solid Black;
+background:white;
+padding:12px;
+text-align:center;
+font-size:14px;
+height:fit-content;
+}
+
+.info-table{
+width:100%;
+border-collapse:collapse;
+font-size:14px;
+margin-top:10px;
+}
+
+.info-table td{
+padding:4px;
+vertical-align:top;
+}
+
+.flag{
+width:16px;
+vertical-align:middle;
+margin-right:4px;
+}
+
+.icon{
+width:14px;
+vertical-align:middle;
+margin-right:4px;
+}
+
+.infobox h3{
+margin-top:0;
+}
+
+.infobox img.profile{
+width:100%;
+border-radius:4px;
+margin-bottom:10px;
+}
+
+/* Main content */
+
+.maincontent{
+flex:1;
+}
+
+/* Sections */
+
+.section{
+border-top:1px solid #a2a9b1;
+padding:12px 0;
+cursor:pointer;
+font-size:20px;
+font-weight:bold;
+}
+
+.content{
+display:none;
+padding:8px 0 15px 0;
+font-size:16px;
+color:#202122;
+}
+
+/* Arrow style */
+
+.arrow{
+font-size:18px;
+margin-right:8px;
+}
+
+</style>
+
+<script>
+
+function toggleSection(id){
+
+var x=document.getElementById(id)
+
+if(x.style.display==="none"){
+x.style.display="block"
+}
+
+else{
+x.style.display="none"
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Duku Jallah</h1>
+
+<div class="container">
+
+<!-- LEFT INFOBOX -->
+
+<div class="infobox">
+
+<h3>Duku Jallah</h3>
+
+<img src="Duku.jpg" class="profile">
+
+<table class="info-table">
+
+<tr>
+<td><b>Occupation</b></td>
+<td>Liberia Youth President</td>
+</tr>
+
+<tr>
+<td><b>Role</b></td>
+<td>Public Servant</td>
+</tr>
+
+<tr>
+<td><b>Nationality</b></td>
+<td><img src="flag-liberia.png" class="flag"> Liberia</td>
+</tr>
+
+<tr>
+<td><b>Known for</b></td>
+<td>Community Leadership</td>
+</tr>
+
+<tr>
+<td><b>Email</b></td>
+<td>
+<a href="mailto:jaustinjallah24@gmail.com">jaustinjallah24@gmail.com</a>
+</td>
+</tr>
+
+<tr>
+<td><b>Facebook</b></td>
+<td><a href="https://www.facebook.com/ernest.jallah.5" target="_blank">Official Facebook</a></td>
+</tr>
+
+</table>
+
+
+</div>
+
+<!-- MAIN CONTENT -->
+
+<div class="maincontent">
+
+<p>
+
+<b>Duku Jallah</b> Jallah lives in Monrovia, Liberia. In addition to his work in youth advocacy and public policy, he is involved in journalism, civic education, and media initiatives aimed at promoting public dialogue and leadership development among young Liberians. Politically, Jallah has described himself as a social conservative while also expressing support for social justice movements and left-leaning struggles related to economic inequality, education access, and youth empowerment. His public commentary frequently focuses on the need to expand opportunities for young people in governance and national development. He has often spoken about the limited political and economic space available to young people in Liberia and has advocated for policies and initiatives aimed at increasing youth representation in decision-making institutions. Outside of his civic work, Jallah has expressed a strong interest in Liberian history, public debate, and political education.
+
+</p>
+
+<div class="section" onclick="toggleSection('early')">
+<span class="arrow">▾</span>Early life
+</div>
+
+<div id="early" class="content">
+Duku Jallah was born and raised in the Red Light community, one of the largest informal settlements in Monrovia, Liberia. He attended the Booker Washington Institute, where he studied electronics. Following his graduation, Jallah began repairing mobile phones in the Red Light area due to limited employment opportunities. The income from this work helped fund his admission to the University of Liberia, where he studied economics. During his time at the university, Jallah became active in student leadership and civic engagement. He was a member of the university’s debate team and participated in student-led advocacy efforts focused on improving the quality of higher education and strengthening student representation. He later completed graduate studies at the University of Liberia Graduate School, graduating in 2023.
+</div>
+
+<div class="section" onclick="toggleSection('career')">
+<span class="arrow">▾</span>Career
+</div>
+
+<div id="career" class="content">
+Jallah’s early public leadership began when he was appointed Acting Youth Chair of the 72nd Community in Paynesville, where he organized youth activities and community initiatives. He later attended the Young Political Leadership School Africa, a program aimed at training emerging political leaders in Africa. During the program, he was elected to its leadership and traveled across Liberia advocating for peaceful democratic participation and youth involvement in elections. In 2018, Jallah was an aspirant in the leadership election of the Liberia National Students Union, a national body representing student organizations. In 2019, he was elected Deputy Secretary for Programs of the Federation of Liberian Youth. He later became Head of Secretariat of the organization in 2022 before being elected President in 2025. Alongside his youth leadership activities, Jallah founded Libpedia, a digital media platform that publishes stories about Liberian history, culture, and youth experiences.
+</div>
+
+<div class="section" onclick="toggleSection('activism')">
+<span class="arrow">▾</span>Youth activism
+</div>
+
+<div id="activism" class="content">
+Jallah has been involved in several youth advocacy initiatives in Liberia focusing on education reform, democratic participation, and governance accountability. He led the 20% Now or Never Campaign, which called for increased national investment in the education sector and advocated for the allocation of at least 20 percent of the national budget to education. He also worked with Naymote Partners for Democratic Development on the President Meter Project, a civic initiative that tracks the performance of elected officials against campaign promises. During election periods, he participated in the Liberia Decides initiative, which aimed to increase youth engagement in democratic processes. In 2020, he founded Libpedia, which produces digital journalism and storytelling content highlighting overlooked communities and social issues in Liberia. Through the initiative, he launched the Liberian History Project, a digital storytelling effort aimed at making Liberian history more accessible to young audiences. In 2022, he was appointed to the Liberia Bicentennial National Committee, which organized commemorative activities marking the country’s bicentennial. Jallah was also involved in the March for Justice, a protest movement calling for stronger government action against sexual and gender-based violence in Liberia. During demonstrations in 2020, he was arrested while participating in protests organized by youth activists. The movement increased national attention to the issue and was followed by the government declaring rape a national emergency. In 2023, Jallah hosted the radio program Our Voices Matter, which brought presidential candidates and policymakers to discuss issues affecting young people ahead of national elections. That same year, he helped convene youth leaders from different political parties to sign the Buutuo Declaration in Nimba County, a commitment to peaceful democratic participation referencing the town historically associated with the start of the Liberian civil war. In 2024, he launched the Future Leaders Town Hall, a civic dialogue initiative that brings public officials together with young people to discuss policy and governance issues affecting youth.
+</div>
+
+<div class="section" onclick="toggleSection('leadership')">
+<span class="arrow">▾</span>Leadership roles
+</div>
+
+<div id="leadership" class="content">
+Jallah has held several leadership positions within youth organizations and governance initiatives in Liberia. He served as Deputy Secretary for Programs of the Federation of Liberian Youth beginning in 2019 and later became Head of Secretariat in 2022. In 2025, he was elected President of the organization. He also helped establish the Youth Legislative Caucus of Liberia, an initiative within the National Legislature of Liberia that seeks to coordinate young lawmakers and advocate for policies addressing youth development.</div>
+
+<div class="section" onclick="toggleSection('contact')">
+<span class="arrow">▾</span>Contact
+</div>
+
+<div id="contact" class="content">
+
+<p><b>Email:<a href="mailto:jaustinjallah24@gmail.com">jaustinjallah24@gmail.com</a></p>
+
+<b>Facebook:</b>
+<a href="https://www.facebook.com/ernest.jallah.5" target="_blank">
+Official Facebook
+</a>
+</p>
+
+<p><b>Location:</b> 
+<img src="flag-liberia.png" width="22" style="vertical-align:middle;"> Liberia
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
